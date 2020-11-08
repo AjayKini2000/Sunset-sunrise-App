@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style type="text/css">
+		body{
+			background-image: url('https://images.unsplash.com/photo-1512387331157-3e2a021998db?ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80');
+			 background-repeat: no-repeat;
+			  background-attachment: fixed;
+ 		 background-size: cover;
+		}
+		div{
+			margin-top: 180px;
+		}
+		hr {
+			margin-top: -5px;
+			border-color: orange;
+			border-width: 4px;
+		}
+		.details-title {
+		background-color: rgba(50, 61, 61, 0.41);
+			color: #FFFFFF;
+			height: 60px;
+			width: 600px;
+			margin-left: 450px;
+			margin-top: 0px;
+		}
+
+		.details-text {
+			margin-top: -10px;
+			margin-left: 80px;
+		}
+		.for{
+			width: 32em; 
+  		border: 0px solid #000000;
+  		word-wrap: break-word;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="details-title">
+		<br/>
+		<h1 class="details-text" style="color: #0000ff;">Astronomical Timings:-</h1>
+	</div>
+	
+<hr/>
+	<center>
+		<p style="color:  #ffcccc; font-size: 30px;" class="for">Instead of a perfectly-circular orbit, Earth's orbit around the Sun is slightly elliptical. The combination of Earth's elliptical orbit and the tilt of its axis results in the Sun taking different paths across the sky at slightly different speeds each day. This gives us different sunrise and sunset times each day.</p>
+		
+		<div style="font-weight: bold; color: white; margin-top: 40px;">
+			<table border=1 cellpadding=9 cellspacing=7>
+				<tr>
+					<td class="td-orange">Sunrise</td>
+					<td class="td-white">{{sunrise}}</td>
+				</tr>
+				<tr>
+					<td class="td-orange">Sunset</td>
+					<td class="td-white">{{sunset}}</td>
+				</tr>
+				<tr>
+					<td class="td-orange">Solar Noon</td>
+					<td class="td-white">{{solar_noon}}</td>
+				</tr>
+				<tr>
+					<td class="td-orange">Day length</td>
+					<td class="td-white">{{day_length}}</td>
+				</tr>
+			</table>
+		</div>
+		<div style="margin-left: -80px; margin-top: 0;">
+		<p style="color: black; font-size: 20px;">See one more response?</p>
+		<a style="margin-left: -120px;" href="/"><button class="fa fa-home home-button"></button></a>	
+		</div>
+	</center>
+</body>
+
+</html>
